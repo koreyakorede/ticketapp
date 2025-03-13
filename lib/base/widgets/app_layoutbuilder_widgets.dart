@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 class AppLayoutBuilderWidget extends StatelessWidget {
   final int randomDivider;
 
-  const AppLayoutBuilderWidget({super.key, required this.randomDivider});
+  const AppLayoutBuilderWidget(
+      {super.key, required this.randomDivider, required int width});
 
   @override
   Widget build(BuildContext context) {

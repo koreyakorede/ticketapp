@@ -19,7 +19,7 @@ class _HomeScreenState extends State<HomeScreen> {
       //Listview widget for scrollable effect
       body: ListView(
         children: [
-          SizedBox(height: 40),
+          const SizedBox(height: 40),
           Container(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Column(
@@ -45,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           borderRadius: BorderRadius.circular(10),
                           color: Colors.green,
                           image: DecorationImage(
-                              image: AssetImage('assets/pic1.jpg')),
+                              image: AssetImage('assets/logo.png')),
                         ),
                       ),
                     ],

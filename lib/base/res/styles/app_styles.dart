@@ -18,6 +18,7 @@ class AppStyles {
       TextStyle(fontSize: 21, fontWeight: FontWeight.bold, color: textColor);
 
   static Color bgColor = Color(0xFFeeedf2);
+
   static TextStyle headLineStyle3 =
       const TextStyle(fontSize: 17, fontWeight: FontWeight.w500);
 

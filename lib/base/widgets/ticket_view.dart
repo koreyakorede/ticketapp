@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/base/res/styles/app_styles.dart';
+import 'package:flutter_application_1/base/widgets/app_column_text_layout.dart';
 import 'package:flutter_application_1/base/widgets/app_layoutbuilder_widgets.dart';
 import 'package:flutter_application_1/base/widgets/big_circle.dart';
 import 'package:flutter_application_1/base/widgets/big_dot.dart';
@@ -30,8 +31,10 @@ class TicketView extends StatelessWidget {
                 ),
                 child: Column(
                   children: [
+                    //show depature time and destination with icons first line
                     Row(
                       children: [
+                        const SizedBox(height: 3),
                         TextStyleThird(text: 'LAG'),
                         Expanded(child: Container()),
                         const BigDot(),
@@ -42,10 +45,11 @@ class TicketView extends StatelessWidget {
                                 height: 24,
                                 child: AppLayoutBuilderWidget(
                                   randomDivider: 6,
+                                  width: 0,
                                 )),
                             Center(
                               child: Transform.rotate(
-                                angle: 1.5,
+                                angle: 1.57,
                                 child: const Icon(Icons.local_airport_rounded,
                                     color: Colors.white),
                               ),
@@ -54,16 +58,17 @@ class TicketView extends StatelessWidget {
                         )),
                         const BigDot(),
                         Expanded(child: Container()),
-                        TextStyleThird(text: 'IB CITY')
+                        TextStyleThird(text: 'IBD')
                       ],
                     ),
                     SizedBox(height: 3),
+                    //show departure and destination names with time
                     Row(
                       children: [
                         const SizedBox(
                             width: 100, child: TextStyleFourth(text: 'Lagos')),
                         Expanded(child: Container()),
-                        const TextStyleFourth(text: '1H 45M'),
+                        const TextStyleFourth(text: '1H 30M'),
                         Expanded(child: Container()),
                         const SizedBox(
                             width: 100,
@@ -73,7 +78,7 @@ class TicketView extends StatelessWidget {
                     ),
                   ],
                 )),
-            //circles part and dots
+            //circle part and dots
             Container(
                 height: 20,
                 color: AppStyles.ticketDeepOrange,
@@ -82,7 +87,8 @@ class TicketView extends StatelessWidget {
                     const BigCircle(isRight: false),
                     Expanded(
                         child: AppLayoutBuilderWidget(
-                      randomDivider: 10,
+                      randomDivider: 16,
+                      width: 6,
                     )),
                     const BigCircle(isRight: true),
                   ],
@@ -99,35 +105,23 @@ class TicketView extends StatelessWidget {
                 child: Column(
                   children: [
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text('10 MAR',
-                            style: AppStyles.headLineStyle3
-                                .copyWith(color: Colors.white)),
-                        Expanded(child: Container()),
-                        Text('08: 00 AM',
-                            style: AppStyles.headLineStyle3
-                                .copyWith(color: Colors.white)),
-                        Expanded(child: Container()),
-                        Text('23',
-                            style: AppStyles.headLineStyle3
-                                .copyWith(color: Colors.white))
-                      ],
-                    ),
-                    SizedBox(height: 3),
-                    Row(
-                      children: [
-                        Text('Date',
-                            style: AppStyles.headLineStyle4
-                                .copyWith(color: Colors.white)),
-                        Expanded(child: Container()),
-                        Text('Departure time',
-                            style: AppStyles.headLineStyle4
-                                .copyWith(color: Colors.white)),
-                        Expanded(child: Container()),
-                        Text('Number',
-                            textAlign: TextAlign.end,
-                            style: AppStyles.headLineStyle4
-                                .copyWith(color: Colors.white)),
+                        AppColumnTextLayout(
+                          topText: '1 MAY',
+                          bottomText: 'DATE',
+                          alignment: CrossAxisAlignment.start,
+                        ),
+                        AppColumnTextLayout(
+                          topText: '08: 00 AM',
+                          bottomText: 'Depature time',
+                          alignment: CrossAxisAlignment.center,
+                        ),
+                        AppColumnTextLayout(
+                          topText: '23',
+                          bottomText: 'Number',
+                          alignment: CrossAxisAlignment.end,
+                        ),
                       ],
                     ),
                   ],
