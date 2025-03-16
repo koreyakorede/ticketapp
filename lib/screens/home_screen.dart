@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/base/utils/all_json.dart';
 import 'package:flutter_application_1/base/widgets/app_double_texts.dart';
 import 'package:flutter_application_1/base/widgets/ticket_view.dart';
+import 'package:flutter_application_1/screens/widgets/hotel.dart';
 import '../base/res/styles/app_styles.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -75,7 +76,10 @@ class _HomeScreenState extends State<HomeScreen> {
                         children: ticketList
                             .map((singleTicket) =>
                                 TicketView(ticket: singleTicket))
-                            .toList()))
+                            .toList())),
+                const SizedBox(height: 40),
+                AppDoubleText(bigText: 'Hotels', smallText: 'View all'),
+                Hotel()
               ])),
         ],
       ),
