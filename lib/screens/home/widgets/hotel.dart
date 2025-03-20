@@ -14,7 +14,7 @@ class Hotel extends StatelessWidget {
       margin: EdgeInsets.only(right: 16),
       height: 350,
       decoration: BoxDecoration(
-        color: AppStyles.primaryColor,
+        color: AppStyles.hotelView,
         borderRadius: BorderRadius.circular(18),
       ),
       child: Column(

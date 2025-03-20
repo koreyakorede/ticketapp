@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 
-Color primary = const Color(0xFF687daf);
+Color primary = const Color(0xFF73777A);
 
 class AppStyles {
   static Color primaryColor = primary;
   static Color textColor = const Color(0xFF3b3b3b);
-  static Color ticketBlue = const Color(0xFF526799);
-  static Color ticketDeepOrange = const Color(0XFFF4511E);
-  static Color kakiColor = const Color(0xFFD2BDB6);
+  static Color ticketBlue = const Color(0xFF000000);
+  static Color ticketDeepOrange = const Color(0xFF3b3b3b);
+  static Color kakiColor = const Color(0xFF4A4848);
+  static Color ticketTabColor = const Color(0xFFF4F6FD);
+  static Color hotelView = const Color(0xFFB1B3B5);
+  static Color planeColor = const Color(0xFF73777A);
   static TextStyle textstyle =
       TextStyle(fontSize: 16, color: textColor, fontWeight: FontWeight.w500);
   static TextStyle headLineStyle1 = TextStyle(
@@ -18,7 +21,7 @@ class AppStyles {
   static TextStyle headLineStyle2 =
       TextStyle(fontSize: 21, fontWeight: FontWeight.bold, color: textColor);
 
-  static Color bgColor = Color(0xFFeeedf2);
+  static Color bgColor = Color(0xFFE6E6E6);
 
   static TextStyle headLineStyle3 =
       const TextStyle(fontSize: 17, fontWeight: FontWeight.w500);

@@ -60,14 +60,17 @@ class _HomeScreenState extends State<HomeScreen> {
                           EdgeInsets.symmetric(horizontal: 12, vertical: 12),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                        color: const Color(0xFFF4F6FD),
+                        color: const Color(0xFFB1B3B5),
                       ),
                       child: const Row(
                         //mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Icon(FluentSystemIcons.ic_fluent_search_regular,
-                              color: Color(0xFFBFC205)),
-                          Text('Search'),
+                              color: Color(0xFFE8EBED)),
+                          Text(
+                            'Search',
+                            style: TextStyle(color: Color(0xFF4A4848)),
+                          )
                         ],
                       ),
                     ),
