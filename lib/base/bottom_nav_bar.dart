@@ -34,8 +34,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
-        selectedItemColor: Color(0xFF000000),
-        unselectedItemColor: const Color(0xFF73777A),
+        selectedItemColor: Color(0xFF0195FF),
+        unselectedItemColor: const Color(0xFF30A5FF),
         showSelectedLabels: false,
         items: const [
           BottomNavigationBarItem(
@@ -58,7 +58,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        backgroundColor: Color(0xFF3b3b3b),
+        backgroundColor: Color(0xFF30A5FF),
         child: Text('Tickets', style: TextStyle(color: Colors.white)),
       ),
     );

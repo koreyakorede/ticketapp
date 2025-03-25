@@ -44,8 +44,8 @@ class Hotel extends StatelessWidget {
           Padding(
               padding: const EdgeInsets.only(left: 15),
               child: Text(hotel['destination'],
-                  style:
-                      AppStyles.headLineStyle3.copyWith(color: Colors.white))),
+                  style: AppStyles.headLineStyle3
+                      .copyWith(color: Colors.lightBlueAccent))),
           SizedBox(
             height: 5,
           ),

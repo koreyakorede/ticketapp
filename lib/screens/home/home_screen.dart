@@ -47,7 +47,6 @@ class _HomeScreenState extends State<HomeScreen> {
                           height: 50,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
-                            color: Colors.green,
                             image: DecorationImage(
                                 image: AssetImage('assets/logo.png')),
                           ),
@@ -60,13 +59,13 @@ class _HomeScreenState extends State<HomeScreen> {
                           EdgeInsets.symmetric(horizontal: 12, vertical: 12),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                        color: const Color(0xFFB1B3B5),
+                        color: const Color(0xFFFFFFFF),
                       ),
                       child: const Row(
                         //mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Icon(FluentSystemIcons.ic_fluent_search_regular,
-                              color: Color(0xFFE8EBED)),
+                              color: Color(0xFF73777A)),
                           Text(
                             'Search',
                             style: TextStyle(color: Color(0xFF4A4848)),
@@ -95,7 +94,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           children: hotelList
                               .map((singleHotel) => Hotel(hotel: singleHotel))
                               .toList(),
-                        ))
+                        )),
+                    SizedBox(height: 20),
                   ])),
         ],
       ),
