@@ -4,6 +4,7 @@ import 'package:flutter_application_1/base/widgets/app_double_texts.dart';
 import 'package:flutter_application_1/search/widgets/app_text_icon.dart';
 import 'package:flutter_application_1/search/widgets/app_ticket_tabs.dart';
 import 'package:flutter_application_1/search/widgets/buy_tickets.dart';
+import 'package:flutter_application_1/search/widgets/ticket_promotion.dart';
 
 class SearchScreen extends StatelessWidget {
   const SearchScreen({super.key});
@@ -32,8 +33,9 @@ class SearchScreen extends StatelessWidget {
               const BuyTickets(),
               const SizedBox(height: 40),
               const AppDoubleText(
-                  bigText: 'Upcoming flights', smallText: 'View all'),
-              const SizedBox(height: 20),
+                  bigText: 'Upcoming Flights', smallText: 'View all'),
+              const SizedBox(height: 15),
+              const TicketPromotion(),
             ]));
   }
 }
